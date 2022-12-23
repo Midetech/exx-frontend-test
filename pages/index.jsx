@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <Layout>
+    <Layout handleClick={handleConnectWallet}>
       <div className=" flex justify-center flex-col items-center gap-y-10">
         <div className="flex justify-center flex-col items-center ">
           <p className="text-center text-[#111315] opacity-[1] lg:text-[44px] font-SpaceGrotesk lg:leading-[94px] font-[700] lg:h-[88px] lg:w-[838px] h-[153px] w-[268px] text-[40px] leading-[51px]">
@@ -141,7 +141,10 @@ export default function Home() {
               </p>
 
               <div className="space-y-4 lg:space-y-0 lg:flex gap-x-4 w-full lg:w-auto">
-                <button className=" text-[12px] bg-[#174AFF] text-white outline-none px-6 min-w-[112px] lg:min-w-[192px] h-[54px] flex justify-center items-center gap-x-3 rounded-[10px] hover:bg-opacity-90 transition-opacity ease-linear delay-150 bg-opacity-100 cursor-pointer w-full lg:w-fit lg:px-10 border border-[#174AFF] bg-transparenttext-white">
+                <button
+                  onClick={handleConnectWallet}
+                  className=" text-[12px] bg-[#174AFF] text-white outline-none px-6 min-w-[112px] lg:min-w-[192px] h-[54px] flex justify-center items-center gap-x-3 rounded-[10px] hover:bg-opacity-90 transition-opacity ease-linear delay-150 bg-opacity-100 cursor-pointer w-full lg:w-fit lg:px-10 border border-[#174AFF] bg-transparenttext-white"
+                >
                   Add to Metamask
                 </button>
                 <button className="text-[#0077FE] outline-none px-6 min-w-[112px] lg:min-w-[192px] h-[54px] flex justify-center items-center gap-x-3 rounded-[10px] hover:bg-opacity-90 transition-opacity ease-linear delay-150 bg-opacity-100 cursor-pointer w-full lg:w-fit lg:px-10 border border-[#174AFF] bg-transparent">

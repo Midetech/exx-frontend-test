@@ -7,7 +7,7 @@ import selector from "../../public/assets/selector.svg";
 import arrowPointer from "../../public/assets/arrow.svg";
 import Head from "next/head";
 
-const Header = () => {
+const Header = ({ handleClick }) => {
   const [active, setActive] = React.useState(false);
   const handleToggle = () => {
     setActive(!active);
@@ -120,7 +120,10 @@ const Header = () => {
             <div class="lg:hidden my-5 border-t border-[#0000001C] w-full"></div>
           </li>
           <li>
-            <button className="lg:w-[197px] w-full lg:h-[54px] h-[64px] rounded-[10px] bg-[#174AFF] text-white capitalize disabled:opacity-60 flex gap-x-4 items-center justify-center">
+            <button
+              onClick={handleClick}
+              className="lg:w-[197px] w-full lg:h-[54px] h-[64px] rounded-[10px] bg-[#174AFF] text-white capitalize disabled:opacity-60 flex gap-x-4 items-center justify-center"
+            >
               <p>Connect Wallet</p>
               <Image src={arrowPointer} alt="exx network" />
             </button>
