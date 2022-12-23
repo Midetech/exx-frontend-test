@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex lg:mt-[380px]">
+        <div className="flex lg:mt-[380px] mt-[450px]">
           <div className="lg:bg-[#f6f6f6] lg:h-[354px] lg:w-[1130px] rounded-[20px] flex lg:flex-row flex-col gap-5 justify-around lg:items-center">
             <div className="lg:w-[402px] lg:h-[221px]">
               <p className="lg:w-[373px] lg:h-[108px] text-[44px] leading-[54px] text-[#000] font-SpaceGrotesk font-bold mb-10">
@@ -172,7 +172,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between lg:flex-row flex-col lg:my-20 gap-y-5">
+        <div className="flex justify-between lg:flex-row flex-col lg:my-20 w-full gap-y-5">
           {resources.map((item, index) => (
             <div
               key={index}
@@ -198,9 +198,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="lg:w-[1129px] lg:h-[460px] bg-[#000] rounded-[24px] relative overflow-hidden flex items-center ">
-            <div className="absolute z-50 left-2 text-white p-10 flex flex-col justify-center gap-y-10 lg:w-[535px]">
-              <p className="font-SpaceGrotesk font-bold text-[56px] leading-[103.1%] lg:h-[116px] lg:w-[535px]">
+          <div className="lg:w-[1129px] lg:h-[460px] h-[707px] w-[90vw] bg-[#000] rounded-[24px] lg:relative overflow-hidden flex lg:items-center ">
+            <div className="absolute z-50 left-2 text-white lg:p-10  py-8 px-12 flex flex-col justify-center gap-y-5 lg:gap-y-10 lg:w-[535px]">
+              <p className="font-SpaceGrotesk font-bold lg:text-[56px] leading-[103.1%] lg:h-[116px] lg:w-[535px] text-[36px] w-[239px] h-[111px] ">
                 Join our developer community
               </p>
               <p className="lg:h-[90px] lg:w-[535px] font-DmSans font-normal  text-[18px] leading-[30px] opacity-[0.6]">
@@ -208,24 +208,25 @@ export default function Home() {
                 you can work collaboratively, develop projects, ask questions
                 and grow your career.
               </p>
-              <button className="flex justify-center items-center h-[54px] rounded-[10px] outline-none bg-[#0077FE]  lg:w-[250px]">
+              <button className="flex justify-center gap-2 items-center h-[54px] rounded-[10px] outline-none bg-[#0077FE]  lg:w-[250px]">
                 <img src="/assets/discord-logo.svg" alt="" srcset="" />
                 <p>Join the community</p>
               </button>
             </div>
-            <div className="lg:w-[1129px] lg:h-[460px] relative">
-              <div className="lg:w-[1228px] lg:h-[1228px] bg-[#fff] bg-opacity-[0.05] rounded-full absolute left-[400px] top-[-248px]"></div>
-              <div className="lg:w-[766px] lg:h-[766px] bg-[#174AFF] rounded-full absolute left-[631px] top-[-17px]"></div>
-              <div className="lg:w-[536px] lg:h-[536px] bg-[#C2F3FF] bg-opacity-[0.2] rounded-full absolute left-[724px] top-[98px]"></div>
-              <div className="lg:w-[356.83px] lg:h-[356.83px] bg-[#E2F8FF] rounded-full absolute left-[803.9px] top-[180.65px]"></div>
+            <div className="lg:w-[1129px] lg:h-[460px] relative h-[606px]  w-full">
+              <div className="lg:w-[1228px] lg:h-[1228px] bg-[#fff] bg-opacity-[0.05] rounded-full absolute lg:left-[400px] lg:top-[-248px] w-[606px] h-[606px] left-[-24px] top-[331px]"></div>
+              <div className="lg:w-[766px] lg:h-[766px] bg-[#174AFF] rounded-full absolute lg:left-[631px] lg:top-[-17px]  w-[392px] h-[392px] left-[83px] top-[438px]"></div>
+              <div className="lg:w-[536px] lg:h-[536px] bg-[#C2F3FF] bg-opacity-[0.2] rounded-full absolute lg:left-[724px] lg:top-[98px]  w-[274.3px] h-[274.3px] left-[150.59px] top-[506.85px]"></div>
+              <div className="lg:w-[356.83px] lg:h-[356.83px] bg-[#E2F8FF] rounded-full absolute lg:left-[803.9px] lg:top-[180.65px]  w-[182.61px] h-[182.61px] -right-4 top-[559.15px]"></div>
 
-              <div className="absolute right-0 bottom-0 z-50">
+              <div className="absolute right-0 lg:bottom-0 bottom-[-5.5rem] z-50">
                 <svg
                   width="294"
                   height="189"
                   viewBox="0 0 294 189"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className=" w-[152px] h-[127px] lg:w-[298.39px] lg:h-[248.37px] "
                 >
                   <path
                     d="M156.508 77.9668H139.26C111.664 77.9668 89.2416 100.389 89.2416 127.986V163.344H206.527V127.986C206.527 100.389 184.105 77.9668 156.508 77.9668Z"
@@ -253,12 +254,12 @@ export default function Home() {
           <p className="font-SpaceGrotesk font-bold text-[44px] leading-[40px] text-[#141830] py-[31px]">
             Exx Updates
           </p>
-          <p className="text-[#626262] text-[18px] leading-[30px] font-DmSans  font-normal lg:w-[590px] lg:h-[60px] lg:mb-[30px]">
+          <p className="text-[#626262] text-[18px] leading-[30px] font-DmSans  font-normal lg:w-[590px] lg:h-[60px] mb-[30px]">
             Catch up with news, blog posts, events and other happenings within
             the EXX ecosystem.
           </p>
 
-          <div className="flex justify-between gap-5">
+          <div className="flex justify-between flex-col lg:flex-row gap-5">
             {news.map((item, index) => (
               <div
                 className="lg:w-[400px] lg:h-[431px] bg-[#f5f5f5] rounded-[20px]  flex flex-col justify-between"
