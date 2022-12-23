@@ -139,7 +139,9 @@ export default function Home() {
               <p className="lg:w-[373px] lg:h-[108px] text-[44px] leading-[54px] text-[#000] font-SpaceGrotesk font-bold mb-10">
                 Get connected to the EXX Network
               </p>
-
+              {errMessage && (
+                <p className="text-red-600 text-sm font-DmSans">{errMessage}</p>
+              )}
               <div className="space-y-4 lg:space-y-0 lg:flex gap-x-4 w-full lg:w-auto">
                 <button
                   onClick={handleConnectWallet}
