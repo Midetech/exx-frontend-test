@@ -12,7 +12,15 @@ const Header = () => {
   const handleToggle = () => {
     setActive(!active);
   };
-
+  React.useEffect(() => {
+    if (active) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflowX = "hidden";
+      document.body.style.overflowY = "unset";
+    };
+  }, [active]);
   return (
     <div
       className={` ${
@@ -87,7 +95,7 @@ const Header = () => {
       </div>
       <nav
         className={`${
-          active ? "min-h-screen  px-2 py-10 " : "hidden"
+          active ? "min-h-screen  px-2 py-10 overflow-hidden " : "hidden"
         } lg:flex lg:min-h-0 gap-x-5 xl:gap-x-12  lg:w-screen w-full`}
       >
         <ul className="flex gap-x-12 xl:gap-x-12 lg:items-center flex-col lg:flex-row">
