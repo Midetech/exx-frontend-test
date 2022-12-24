@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Exx-Frontend-Test
 
-## Getting Started
+Exx-frontend-test
+by Sunday Olomitutu
 
-First, run the development server:
+## Demo link:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Hosted URL [https://exx-frontend-test.vercel.app/](https://exx-frontend-test.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Content:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
+- [Status](#status)
+- [Credits](#credits)
+- [License](#license)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## About The App
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Exx-frontend-test is a coding test for EXX Network Frontend developer role and it is a web3 landingpage that gives user overview of what  the product is  all about  and also  allows user to connect their Metamask wallet to the web page. (Note: Connect wallet currently works on Desktop/Laptop chrome browser  and  Metamask extension  must be installed to be able to connect your wallet wiith this website. )
 
-## Learn More
+##Screenshots
+![desktop](https://user-images.githubusercontent.com/23562596/209452812-8fb11a91-e408-4b92-b23b-b75ed31e5395.png)
 
-To learn more about Next.js, take a look at the following resources:
+Laptop Screen
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![iPad](https://user-images.githubusercontent.com/23562596/209452815-fbf78fb2-db9b-48ca-bcc9-1145ccc6cec0.png)
+iPad
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Moobile  (iPhone X)](https://user-images.githubusercontent.com/23562596/209452817-7d995f57-6d98-48ca-8354-98409bb3b2b1.png)
+iPhone
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Android](https://user-images.githubusercontent.com/23562596/209452833-3412ddba-5515-40ba-bc4e-2c6df0072f01.png)
+
+Android 
+
+## Technologies
+
+- Reactjs
+- CSS
+- TailwindCSS
+- ethers
+
+## Setup!
+
+- download or clone the repository
+- run `npm install` or `yarn` to install project dependecies
+
+To visit the app
+
+localhost:3000
+
+## Approach
+
+Components are breaking down based on reusability e.g header, Footer, layout which can  be found  in the shared folder. Since this is just a single UI I combine the components in the index.jsx to build the landing page and optimize for responsiveness accross  different screens.
+
+
+## Status
+
+This is a coding challenge for Frontend Role at Exx Network.
