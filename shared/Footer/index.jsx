@@ -92,23 +92,23 @@ const Footer = () => {
       <div class="my-5 border-t border-[rgba(23, 74, 255, 0.13)] w-full  lg:mt-[40px]"></div>
 
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-[22px]">
-        <div className="flex items-center lg:gap-[32px] gap-[20px]">
-          <p className="text-[16px] leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
+        <div className="flex items-center lg:gap-[32px] gap-[15px]">
+          <p className="text-[12px] lg:text-[16px] leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
             Privacy Policy
           </p>
 
           <div className="border-r border-[rgba(23, 74, 255, 0.13)] hidden lg:block h-[27px]"></div>
-          <p className="text-[16px] leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
+          <p className="text-[12px] lg:text-[16px]  leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
             Terms & Conditions
           </p>
 
           <div className="border-r border-[rgba(23, 74, 255, 0.13)] hidden lg:block h-[27px]"></div>
-          <p className="text-[16px] leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
+          <p className="text-[12px] lg:text-[16px]  leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
             Disclaimer
           </p>
         </div>
 
-        <p className="text-[16px] leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
+        <p className="text-[12px] lg:text-[16px]  leading-[150%] text-[#596780] text-justify font-[400] font-DmSans">
           With love 💙 from Exxample, Inc
         </p>
       </div>

@@ -116,7 +116,7 @@ export default function Home() {
             </p>
             <div
               style={{ boxShadow: "0px 4px 42px rgba(0, 0, 0, 0.1)" }}
-              className="lg:absolute md:absolute lg:-bottom-10  md:-bottom-8 mt-10 bg-white lg:h-[332px] h-[709px]  md:h-auto   lg:w-[1259px] md:w-[750px] w-[335px] rounded-[19px]  flex justify-between items-center flex-co md:flex-row lg:flex-row p-5"
+              className="lg:absolute md:absolute lg:-bottom-10  md:-bottom-8 mt-10 bg-white lg:h-[332px] h-[709px]  md:h-auto   lg:w-[1259px] md:w-[750px] w-[335px] rounded-[19px]  flex justify-between items-center flex-col md:flex-row lg:flex-row p-5"
             >
               {steps.map((item, index) => (
                 <div
