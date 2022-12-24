@@ -33,7 +33,7 @@ export default function Home() {
     <Layout handleClick={handleConnectWallet}>
       <div className=" flex justify-center flex-col items-center gap-y-10">
         <div className="flex justify-center flex-col items-center ">
-          <p className="text-center text-[#111315] opacity-[1]  md:h-auto  lg:text-[44px] font-SpaceGrotesk lg:leading-[94px] font-[700] lg:h-[88px] lg:w-[838px]  md:w-full h-[153px] w-[268px] text-[40px] leading-[51px]">
+          <p className="text-center text-[#111315] opacity-[1]  md:h-auto  lg:text-[44px] font-SpaceGrotesk lg:leading-[94px] font-[700] lg:h-[88px] lg:w-[838px]  md:w-4/5 h-[153px] w-[268px] text-[40px] leading-[51px]">
             Start building apps with{" "}
             <span className="text-[#174AFF]">useful cases</span>
           </p>
@@ -232,26 +232,26 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="lg:w-[1129px] md:w-[95vw] md:flex-row lg:h-[460px] h-[707px] w-[90vw] bg-[#000] rounded-[24px] lg:relative md:relative  md:flex  overflow-hidden flex lg:items-center ">
-            <div className="absolute z-50 left-2 text-white lg:p-10  py-8 px-12 flex flex-col  justify-center gap-y-5 lg:gap-y-10 lg:w-[535px] md:w-1/2">
-              <p className="font-SpaceGrotesk font-bold lg:text-[56px] leading-[103.1%] lg:h-[116px] lg:w-[535px] text-[36px] w-[239px] h-[111px] ">
+          <div className="lg:w-[1129px] md:w-[95vw] md:flex-row lg:h-[460px] h-[707px] w-[90vw] bg-[#000] rounded-[24px] lg:relative overflow-hidden flex lg:items-center ">
+            <div className="absolute z-50 left-2 text-white lg:p-10  py-8 px-12 flex flex-col  justify-center gap-y-5 lg:gap-y-10 lg:w-[535px] md:w-full">
+              <p className="font-SpaceGrotesk font-bold lg:text-[56px] leading-[103.1%] lg:h-[116px] lg:w-[535px] text-[36px] w-[239px] h-[111px] md:w-1/2 md:mx-auto md:text-center  md:h-auto">
                 Join our developer community
               </p>
-              <p className="lg:h-[90px] lg:w-[535px] font-DmSans font-normal  text-[18px] leading-[30px] opacity-[0.6]">
+              <p className="lg:h-[90px] lg:w-[535px] font-DmSans font-normal  text-[18px] leading-[30px] opacity-[0.6] md:w-4/5 md:text-center md:mx-auto ">
                 Join our community of developers from diverse backgrounds where
                 you can work collaboratively, develop projects, ask questions
                 and grow your career.
               </p>
-              <button className="flex justify-center gap-2 items-center h-[54px] rounded-[10px] outline-none bg-[#0077FE]  lg:w-[250px]">
+              <button className="flex justify-center gap-2 items-center h-[54px] rounded-[10px] outline-none bg-[#0077FE] md:w-1/2 md:mx-auto  lg:w-[250px]">
                 <img src="/assets/discord-logo.svg" alt="" />
                 <p>Join the community</p>
               </button>
             </div>
-            <div className="lg:w-[1129px] md:w-1/2 lg:h-[460px] relative h-[606px] w-full">
-              <div className="lg:w-[1228px] md:w-1/2 lg:h-[1228px] bg-[#fff] bg-opacity-[0.05] rounded-full absolute lg:left-[400px] lg:top-[-248px] w-[606px] h-[606px] left-[-24px] top-[331px]"></div>
-              <div className="lg:w-[766px]  md:w-1/2lg:h-[766px] bg-[#174AFF] rounded-full absolute lg:left-[631px] lg:top-[-17px]  w-[392px] h-[392px] left-[83px] top-[438px]"></div>
-              <div className="lg:w-[536px] lg:h-[536px] bg-[#C2F3FF] bg-opacity-[0.2] rounded-full absolute lg:left-[724px] lg:top-[98px]  w-[274.3px] h-[274.3px] left-[150.59px] top-[506.85px]"></div>
-              <div className="lg:w-[356.83px] md:w-1/2 lg:h-[356.83px] bg-[#E2F8FF] rounded-full absolute lg:left-[803.9px] lg:top-[180.65px]  w-[182.61px] h-[182.61px] -right-4 top-[559.15px]"></div>
+            <div className="lg:w-[1129px] lg:h-[460px] relative h-[606px] w-full">
+              <div className="lg:w-[1228px] lg:h-[1228px] bg-[#fff] bg-opacity-[0.05] rounded-full absolute lg:left-[400px] lg:top-[-248px] w-[606px] h-[606px] left-[-24px] top-[331px] md:w-[1228px] md:h-[1228px] md:top-[150px]"></div>
+              <div className="lg:w-[766px] lg:h-[766px] md:w-[766px] md:h-[766px] bg-[#174AFF] rounded-full absolute lg:left-[631px] lg:top-[-17px]  w-[392px] h-[392px] left-[83px] top-[438px] md:left-[160px] md:top-[330px] "></div>
+              <div className="lg:w-[536px] lg:h-[536px] md:w-[536px] md:h-[536px] bg-[#C2F3FF] bg-opacity-[0.2] rounded-full absolute lg:left-[724px] lg:top-[98px]  w-[274.3px] h-[274.3px] left-[150.59px] top-[506.85px] md:left-[280px] md:top-[430px]"></div>
+              <div className="lg:w-[356.83px] lg:h-[356.83px] md:w-[356.83px] md:h-[356.83px] md:top-[510px] bg-[#E2F8FF] rounded-full absolute lg:left-[803.9px] lg:top-[180.65px]  w-[182.61px] h-[182.61px] -right-4 top-[559.15px]"></div>
               <img
                 src="/assets/code.svg"
                 alt=""
@@ -262,7 +262,7 @@ export default function Home() {
                 alt=""
                 className="absolute lg:left-[952px] lg:top-[49px] left-[267.27px] top-[481.78px] w-[49.99px] h-[40.99px] lg:w-[80.11px] lg:h-[80.11px]"
               />
-              <div className="absolute right-0 lg:bottom-0 bottom-[-5.5rem] z-50">
+              <div className="absolute right-0 lg:bottom-0 bottom-[-5.5rem] z-50 md:right-20">
                 <svg
                   width="294"
                   height="189"
