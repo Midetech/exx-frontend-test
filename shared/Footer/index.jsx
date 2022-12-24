@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" lg:w-[1440px]  font-SpaceGrotesk overflow-hidden lg:bg-white flex  justify-between py-7 px-5 lg:py-7 lg:px-7 xl:py-6 xl:px-20 3xl:bg-transparent flex-col lg:flex-row w-full">
+    <div className="  font-SpaceGrotesk overflow-hidden lg:bg-white flex  justify-center py-7 px-5 lg:py-7 lg:px-7 xl:py-6 xl:px-20 3xl:bg-transparent flex-col lg:flex-row w-full">
       <div className="flex flex-col gap-y-4 pb-5">
         <img
           className="w-[99px] lg:w-28 lg:hidden block "

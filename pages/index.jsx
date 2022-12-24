@@ -72,11 +72,16 @@ export default function Home() {
           <img src="/assets/dashboard.png" alt="exx network" />
 
           <div className="lg:absolute lg:top-[14.6rem] relative text-white bg-[#111315] lg:h-[133px] h-[199px] w-screen flex justify-center items-center  font-SpaceGrotesk">
-            <div className="lg:w-[793px] flex justify-between">
+            <div className="lg:w-[793px] lg:h-[133px] h-[199px] flex lg:justify-between  items-center gap-x-[32px] lg:gap-x-0 justify-center flex-wrap  lg:flex-nowrap">
               {links.map((item, index) => (
-                <div className="flex-0" key={index}>
+                <div
+                  className={`${
+                    index === 0 ? "order-0" : "order-1"
+                  } lg:order-1`}
+                  key={index}
+                >
                   <button className="outline-none flex justify-center items-center ">
-                    <p className="text-white text-[18px] leading-[24px] font-SpaceGrotesk font-[700]">
+                    <p className="text-white lg:text-[18px] text-[16px] leading-[24px] font-SpaceGrotesk font-[700]">
                       {item.title}
                     </p>
                     <span>
@@ -97,7 +102,7 @@ export default function Home() {
                       </svg>
                     </span>
                   </button>
-                  <p className="text-white  opacity-[0.6] text-[14px] leading-[20px] font-DmSans font-[400] ">
+                  <p className="text-white  opacity-[0.6] lg:text-[14px] text-[12px] leading-[20px] font-DmSans font-[400] ">
                     {item.text}
                   </p>
                 </div>
@@ -111,7 +116,7 @@ export default function Home() {
             </p>
             <div
               style={{ boxShadow: "0px 4px 42px rgba(0, 0, 0, 0.1)" }}
-              className="lg:absolute lg:-bottom-10 bg-white lg:h-[332px] h-[709px] lg:w-[1259px] w-[335px] rounded-[19px]  flex justify-between items-center flex-col lg:flex-row p-5"
+              className="lg:absolute lg:-bottom-10 mt-10 bg-white lg:h-[332px] h-[709px] lg:w-[1259px] w-[335px] rounded-[19px]  flex justify-between items-center flex-col lg:flex-row p-5"
             >
               {steps.map((item, index) => (
                 <div
@@ -177,7 +182,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between lg:flex-row flex-col lg:my-20 w-full gap-y-5">
+        <div className="flex justify-between lg:flex-row flex-col lg:my-20 w-full gap-y-5 lg:w-[1145px]">
           {resources.map((item, index) => (
             <div
               key={index}
@@ -214,7 +219,7 @@ export default function Home() {
                 and grow your career.
               </p>
               <button className="flex justify-center gap-2 items-center h-[54px] rounded-[10px] outline-none bg-[#0077FE]  lg:w-[250px]">
-                <img src="/assets/discord-logo.svg" alt="" srcset="" />
+                <img src="/assets/discord-logo.svg" alt="" />
                 <p>Join the community</p>
               </button>
             </div>
@@ -271,17 +276,45 @@ export default function Home() {
                 key={index}
               >
                 <div className="flex justify-between   p-4">
-                  <p>{item.tag}</p>
-                  <p>{item.date}</p>
+                  <p className="font-DmSans text-[12px] leading-[20px] font-bold text-[#141830]">
+                    {item.tag}
+                  </p>
+                  <p className="font-DmSans text-[12px] leading-[20px] font-bold text-[#141830] opacity-[0.5]">
+                    {item.date}
+                  </p>
                 </div>
-                <p className="p-4">{item.headline}</p>
+                <p className="p-4 font-DmSans text-[20px] leading-[34px] font-bold text-[#141830]">
+                  {item.headline}
+                </p>
                 <img src={item.image} alt="" />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="w-screen bg-black  h-[327px] lg:my-14"></div>
+        <div className="w-screen bg-black  lg:h-[327px] lg:my-14 flex lg:flex-row flex-col h-[278px] justify-center lg:items-center  lg:gap-[145px]  gap-[14px]">
+          <div className="px-4">
+            <p className="lg:w-[475.5px] lg:h-[80px] lg:text-[44px] lg:leading-[80px] text-[24px] leading-[24px] font-SpaceGrotesk font-bold  text-white">
+              Stay Updated
+            </p>
+            <p className="lg:text-[24px] lg:leading-[32px] text-[18px] leading-[26px] w-[327px] text-white font-bold font-DmSans lg:w-[458px] lg:h-[64px]">
+              Subscribe to our newsletter. We only send important updates.
+            </p>
+          </div>
+
+          <div className="flex gap-[14px]  lg:flex-row flex-col  px-4">
+            <input
+              placeholder="Your email address"
+              type="email"
+              className="lg:w-[456px] h-[54px] w-full rounded-[10px] border border-[rgba(255, 255, 255, 0.48)] bg-transparent p-2"
+            />
+
+            <button className="outline-none p-[16.633px 24.95px] flex justify-center  items-center flex-row gap-[8.32px]  bg-[#174AFF] rounded-[10px] border border-[#174AFF] lg:w-[167px] h-[54px] text-white font-DmSans font-bold text-[14px]  leading-[18px]">
+              <p>Subscribe now</p>
+              <img src="/assets/arrow.svg" alt="exx network" />
+            </button>
+          </div>
+        </div>
       </div>
     </Layout>
   );
